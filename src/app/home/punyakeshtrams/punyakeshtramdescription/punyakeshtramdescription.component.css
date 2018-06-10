@@ -1,0 +1,20 @@
+
+    h1{
+        font-size: 3em;
+        color: #ff5601;
+        margin-left: 450px;
+        margin-top: 40px;
+    }
+  
+    .discriprtionpunashthra1{
+        margin-top: 15px;
+    }
+    .discriprtionpunashthra2{
+        margin-top: 20px;
+    }
+    .discriprtionpunashthra1.p {
+        line-height: 100px;
+    }
+    .discriprtionpunashthra3{
+        margin-top: 60px;
+    }

@@ -1,0 +1,113 @@
+<!-- <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src='../../assets/images/logo.png'/></a>
+    </div>
+    <ul class="nav navbar-nav pull-right">
+      <li><a href="#" [routerLink]="'home'">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" [routerLink]="'poojas'" data-toggle="dropdown" href="#">Poojas
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><h4>All Categories</h4></li>
+          <li><a href="#">Festival Poojas</a></li>
+          <li><a href="#">Life Steps</a></li>
+          <li><a href="#">Occasional Poojas</a></li>
+          <li><a href="#">Special Poojas</a></li>
+        </ul>
+      </li>
+      <li><a [routerLink]="'login'" href="#">Login</a></li>
+      <li><a [routerLink]="'register'" href="#">Register</a></li>
+    </ul>
+  </div>
+</nav> -->
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header col-sm-8">
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/images/logo.png">
+      </a>
+    </div>
+    <ul class="col-sm-4 nav navbar-nav nav-list">
+      <li class="active">
+        <a [routerLink]='"home"' href="#">Home</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pujas
+          <span class="caret"></span>
+        </a>
+        <!-- poojas DropDrown starts here-->
+        <ul class="dropdown-menu">
+          <div class='col-sm-6'>
+            <li>
+              <a href="#" [routerLink]="['poojasCategories/all']" style="font-size:25px; color:lightskyblue">All Categories</a>
+              <hr>
+            </li>
+            <div class="sl">
+              <li>
+                <a href="#" [routerLink]="['poojasCategories/1']" >Festival Poojas</a>
+              </li>
+              <li>
+                <a href="#" [routerLink]="['poojasCategories/2']" >Life Steps</a>
+              </li>
+              <li>
+                <a href="#" [routerLink]="['poojasCategories/3']" >Occasional Poojas</a>
+              </li>
+              <li>
+                <a href="#" [routerLink]="['poojasCategories/4']" >Special Poojas</a>
+            </div>
+          </div>
+          <div class='col-sm-6'>
+            <li>
+              <a href="#">
+                <img src="../assets/images/5.jpg/" width="100%" height="100%">
+              </a>
+            </li>
+          </div>
+        </ul>
+
+        </li>
+        <!-- punyakshetram DropDrown starts Here-->
+        <ul class="nav navbar-nav ">
+          <li class="dropdown" style='display:none'>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Punyakshetram
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <div class='col-sm-6'>
+                <li>
+                  <a href="#" [routerLink]="['punyakshetramsCategories/all']" style="font-size:25px; color:lightskyblue">All Categories</a>
+                  <hr>
+                </li>
+                <div class="sl">
+                  <li>
+                    <a href="#" [routerLink]="['punyakshetramsCategories/1']">River</a>
+                  </li>
+                  <li>
+                    <a href="#" [routerLink]="['punyakshetramsCategories/2']">Shakthi Peetam</a>
+                  </li>
+                </div>
+              </div>
+
+              <div class='col-sm-6'>
+                <li>
+                  <a href="#">
+                    <img src="../assets/images/14.jpg/" width="100%" height="100%">
+                  </a>
+                </li>
+
+              </div>
+
+
+            </ul>
+          </li>
+        </ul>
+
+
+        <li class="active">
+          <a [routerLink]="['contactUs']" href="#">Contact Us</a>
+        </li>
+
+    </ul>
+  </div>
+</nav>

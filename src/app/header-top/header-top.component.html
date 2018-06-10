@@ -1,0 +1,42 @@
+<nav class="navbar header1">
+  <div class="container">
+    <div class="navbar-header col-sm-7">
+      <a class="navbar-brand" href="#">Help
+        <i class="glyphicon glyphicon-phone" aria-hidden="true"></i>+91 7400462718
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a [routerLink]="['purohith']" href="#" style='visibility: hidden'>Register as Purohith</a>
+      </li>
+      <li>
+        <a [routerLink]="['register']" href="#" *ngIf='!isUserValid'>Register With Us</a>
+      </li>
+      <li>
+        <a [routerLink]="['login']" href="#" *ngIf='!isUserValid'>Login</a>
+      </li>
+
+      <li class="dropdown" *ngIf='isUserValid'>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Hi <strong>{{userDetails.name | titlecase}}</strong> Welcome
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+
+          <li>
+            <a [routerLink]="['updateProfile']" *ngIf='isUserValid' href="#" style='display:none'>Update Profile</a>
+          </li>
+          <li>
+            <a [routerLink]="['myOrders']" *ngIf='isUserValid' href="#">My Orders</a>
+          </li>
+          <li>
+            <a [routerLink]="['changePassword']" *ngIf='isUserValid' href="#">Change Password</a>
+          </li>
+          <li>
+            <a href="#" (click)='logout()' *ngIf='isUserValid'>Logout</a>
+          </li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,42 @@
+.img-item{
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    padding: 10px;
+}
+h4{
+    color: #ff5601;
+    text-align:center;
+}
+.span{
+
+        font-size: 1em;
+        color: #333333c7;
+        margin: 1em 0;
+        display: block;
+        font-weight: 600;
+        font-family: 'Open Sans',sans-serif;
+        box-sizing: border-box;
+        font-family: bold;
+}
+.size{
+font-weight: 600;
+text-align:center;
+font-size:14px;
+}
+.size1{
+    margin-top:25px;
+    height:40px;
+    }
+.container{
+margin-top: 50px;
+}
+.btn{
+    background-color:#ff5601; 
+}
+.col-sm-3{
+    width: 270px;
+    margin-left: 10px;
+}
+.book-now{
+    margin-left: 42px;
+}

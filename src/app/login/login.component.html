@@ -1,0 +1,42 @@
+<div class='container'>
+  <div class='form1'>
+    <form (ngSubmit)='submitLogin(loginForm)' #loginForm="ngForm">
+      <div class='form-header'>
+        <h2>Login To SreePooja</h2>
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="glyphicon glyphicon-envelope"></i>
+        </span>
+        <input type="email" placeholder="Email" class="form-control" name="email" ngModel required pattern='^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$'>
+      </div>
+      <div *ngIf='submitClick && loginForm.form.controls.email.invalid' style='color:red;font-size:12px;margin-left:20px'>* Email is required</div>
+      <div class="input-group">
+        <span class="input-group-addon">
+          <i class="glyphicon glyphicon-lock"></i>
+        </span>
+        <input id="password" type="password" class="form-control" name="password" ngModel required placeholder="Password">
+      </div>
+      <div *ngIf='submitClick && loginForm.form.controls.password.invalid' style='color:red;font-size:12px;margin-left:20px'>* Password is required</div>
+      <div class="input-group">
+        <button type='submit' class='btn btn-warning '>Login</button>
+      </div>
+      <div *ngIf='isNotSuccessful' class="alert alert-danger alert-dismissible fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>Error:</strong> {{successMessage}}
+      </div>
+      <div class='footers'>
+        <div class='col-sm-5'>
+          <h5 [routerLink]='"../forgotPassword"'>
+            forgot password?
+          </h5>
+        </div>
+        <div class='col-sm-4 pull-right'>
+          <h5 [routerLink]='"../register"'>
+            rigister here
+          </h5>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

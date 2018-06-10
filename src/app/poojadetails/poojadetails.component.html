@@ -1,0 +1,11 @@
+<div class="container">
+<div class="col-sm-5">
+  <img src="../../assets/images/poojas/{{poojadata.imagePath}}" width="88%" height="400px">
+</div>
+<div class="col-sm-7">
+  <h4>Puja Name: </h4><h3 style='color:orange'>{{poojadata.name}}</h3>
+  <button class="btn btn-warning" (click)='bookNow(poojadata.recId)'>Book Puja Now</button>
+  <h4>Quick Overview :</h4>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{poojadata.description}}</p>
+</div>
+</div>

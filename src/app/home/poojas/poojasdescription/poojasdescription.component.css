@@ -1,0 +1,54 @@
+h1{
+    font-size: 3em;
+    color: #ff5601;
+    margin-left: 500px;
+}
+.discriprtionpuja2{
+    margin-top: 25px;
+}
+.discriprtionpuja1{
+    margin-top: 25px;
+}
+.img-item{
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    padding: 10px;
+}
+h4{
+    color: #ff5601;
+    text-align:center;
+}
+.span{
+
+        font-size: 1em;
+        color: #000;
+        margin: 1em 0;
+        display: block;
+        font-weight: 600;
+        font-family: 'Open Sans',sans-serif;
+        box-sizing: border-box;
+        font-family: bold;
+       
+        
+}
+.size{
+font-family: bold;
+text-align:center;
+font-size:14px;
+}
+.container{
+margin-top: 50px;
+}
+.btn{
+    background-color:#ff5601; 
+}
+.col-sm-3{
+    width: 270px;
+    margin-left: 10px;
+}
+.book-now{
+    margin-left: 42px;
+}
+.buttons{
+    margin-top: 15px;
+}
